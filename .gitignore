@@ -1,0 +1,9 @@
+node_modules/
+package.json
+package-lock.json
+test-hub.js
+take-screenshot.js
+*.png
+*.log
+.DS_Store
+Thumbs.db
