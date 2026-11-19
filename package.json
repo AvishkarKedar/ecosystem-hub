@@ -1,0 +1,26 @@
+{
+  "name": "ecosystem-hub",
+  "version": "1.0.0",
+  "description": "The central landing portal and unified gateway for Avishkar Kedar's cloud infrastructure, self-hosted services, and production web applications.",
+  "main": "test-hub.js",
+  "scripts": {
+    "test": "node test-hub.js",
+    "test:edge": "node test-edge-cases.js",
+    "screenshot": "node take-screenshot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvishkarKedar/ecosystem-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AvishkarKedar/ecosystem-hub/issues"
+  },
+  "homepage": "https://github.com/AvishkarKedar/ecosystem-hub#readme",
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  }
+}
