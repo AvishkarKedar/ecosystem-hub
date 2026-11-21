@@ -1,9 +1,9 @@
-const { chromium } = require('playwright');
+const { chromium, devices } = require('playwright');
 const path = require('path');
 const assert = require('assert');
 
 (async () => {
-  console.log('Starting minimal monochrome directory verification...');
+  console.log('Starting verification of hosted-only websites directory...');
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
     viewport: { width: 1280, height: 900 },
@@ -24,37 +24,31 @@ const assert = require('assert');
   console.log('✓ Page Title:', title);
   assert(title.includes('Avishkar Kedar') && title.includes('Software Engineer'), 'Title must feature Avishkar Kedar');
 
-  // 2. Count Cards
+  // 2. Count Cards (Exactly 5 hosted websites)
   const totalCards = await page.locator('.project-card').count();
-  console.log('✓ Total Public Project Cards:', totalCards);
-  assert.strictEqual(totalCards, 9, 'Expected exactly 9 public projects');
+  console.log('✓ Total Hosted Website Cards:', totalCards);
+  assert.strictEqual(totalCards, 5, 'Expected exactly 5 hosted website projects');
 
   // 3. Category Filter Tests
   console.log('Testing category filters...');
 
-  // Hosted Filter
-  await page.click('button[data-filter="hosted"]');
-  const hostedCards = await page.locator('.project-card:visible').count();
-  console.log(`✓ Hosted filter: ${hostedCards} cards visible`);
-  assert.strictEqual(hostedCards, 3, 'Expected 3 hosted apps');
+  // Web Apps Filter
+  await page.click('button[data-filter="web"]');
+  const webCards = await page.locator('.project-card:visible').count();
+  console.log(`✓ Web filter: ${webCards} cards visible`);
+  assert.strictEqual(webCards, 3, 'Expected 3 web apps');
 
-  // Cloud Filter
+  // Cloud Systems Filter
   await page.click('button[data-filter="cloud"]');
   const cloudCards = await page.locator('.project-card:visible').count();
   console.log(`✓ Cloud filter: ${cloudCards} cards visible`);
   assert.strictEqual(cloudCards, 2, 'Expected 2 cloud services');
 
-  // OSS Filter
-  await page.click('button[data-filter="oss"]');
-  const ossCards = await page.locator('.project-card:visible').count();
-  console.log(`✓ OSS filter: ${ossCards} cards visible`);
-  assert.strictEqual(ossCards, 4, 'Expected 4 OSS tools');
-
   // Reset to All
   await page.click('button[data-filter="all"]');
   const allCards = await page.locator('.project-card:visible').count();
   console.log(`✓ All filter restored: ${allCards} cards visible`);
-  assert.strictEqual(allCards, 9);
+  assert.strictEqual(allCards, 5);
 
   // 4. Search Filter Tests
   console.log('Testing search functionality...');
@@ -67,7 +61,7 @@ const assert = require('assert');
   await page.fill('#searchInput', '');
   const resetCount = await page.locator('.project-card:visible').count();
   console.log(`✓ Cleared search: ${resetCount} cards restored`);
-  assert.strictEqual(resetCount, 9);
+  assert.strictEqual(resetCount, 5);
 
   // Empty state test
   await page.fill('#searchInput', 'nonexistenttermxyz');
@@ -81,7 +75,7 @@ const assert = require('assert');
   await page.click('#emptyState button');
   const restoredFromEmpty = await page.locator('.project-card:visible').count();
   console.log(`✓ Reset via empty-state button: ${restoredFromEmpty} cards visible`);
-  assert.strictEqual(restoredFromEmpty, 9);
+  assert.strictEqual(restoredFromEmpty, 5);
 
   // 5. Test Email Copy
   await page.click('#copyEmailBtn');
@@ -105,16 +99,22 @@ const assert = require('assert');
   }
 
   // 7. Capture Desktop Screenshot
-  await page.setViewportSize({ width: 1440, height: 1100 });
+  await page.setViewportSize({ width: 1440, height: 950 });
   const desktopShot = 'C:/Users/Dell/.gemini/antigravity/brain/b6e56e02-45e8-46aa-91b9-42706c517b2c/screenshot-desktop.png';
   await page.screenshot({ path: desktopShot, fullPage: true });
   console.log('✓ Captured desktop screenshot to:', desktopShot);
 
-  // 8. Capture Mobile Screenshot
-  await page.setViewportSize({ width: 390, height: 844 });
+  // 8. Capture Android Mobile Device (Pixel 7 / Android Chrome simulation)
+  const pixel = devices['Pixel 7'] || { viewport: { width: 412, height: 915 }, userAgent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7)' };
+  const androidContext = await browser.newContext({
+    ...pixel,
+    permissions: ['clipboard-read', 'clipboard-write']
+  });
+  const androidPage = await androidContext.newPage();
+  await androidPage.goto(filePath, { waitUntil: 'load' });
   const mobileShot = 'C:/Users/Dell/.gemini/antigravity/brain/b6e56e02-45e8-46aa-91b9-42706c517b2c/screenshot-mobile.png';
-  await page.screenshot({ path: mobileShot, fullPage: true });
-  console.log('✓ Captured mobile screenshot to:', mobileShot);
+  await androidPage.screenshot({ path: mobileShot, fullPage: true });
+  console.log('✓ Captured Android mobile screenshot (Pixel 7 412x915) to:', mobileShot);
 
   // 9. Check Console Errors
   const errors = consoleLogs.filter(l => l.type === 'error');
@@ -123,6 +123,6 @@ const assert = require('assert');
 
   await browser.close();
   console.log('\n========================================');
-  console.log(' ALL SUITES PASSED! MINIMAL MONOCHROME VERIFIED');
+  console.log(' ALL 5-HOSTED SUITES PASSED! ANDROID & DESKTOP PERFECT');
   console.log('========================================\n');
 })();
