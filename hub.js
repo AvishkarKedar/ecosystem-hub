@@ -102,3 +102,26 @@ function showToast() {
     }, 2200);
   }
 }
+
+// Bind click events unobtrusively (Zero CSP violations)
+function initClickBindings() {
+  const copyBtn = document.getElementById('copyEmailBtn');
+  if (copyBtn) copyBtn.addEventListener('click', copyEmail);
+
+  const copyRowBtn = document.getElementById('copyEmailRowBtn');
+  if (copyRowBtn) copyRowBtn.addEventListener('click', copyEmail);
+
+  document.querySelectorAll('.contact-row-action').forEach(btn => {
+    btn.addEventListener('click', copyEmail);
+  });
+
+  document.querySelectorAll('#emptyState button').forEach(btn => {
+    btn.addEventListener('click', resetFilters);
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initClickBindings);
+} else {
+  initClickBindings();
+}

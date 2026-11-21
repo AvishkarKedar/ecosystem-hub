@@ -22,16 +22,21 @@
   <meta property="og:url" content="https://avishkarkedar.com/">
   <meta property="og:title" content="Avishkar Kedar — Software Engineer & Cloud Directory">
   <meta property="og:description" content="Official website and live service directory of Avishkar Kedar. Software engineer and cloud systems builder from Pune, India.">
+  <meta property="og:image" content="https://avishkarkedar.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Avishkar Kedar — Software Engineer & Cloud Directory">
   <meta property="profile:first_name" content="Avishkar">
   <meta property="profile:last_name" content="Kedar">
   <meta property="profile:username" content="AvishkarKedar">
 
   <!-- Twitter / X Cards -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@AvishkarKedar">
   <meta name="twitter:creator" content="@AvishkarKedar">
   <meta name="twitter:title" content="Avishkar Kedar — Software Engineer & Cloud Directory">
   <meta name="twitter:description" content="Official website and live service directory of Avishkar Kedar. Full-stack software developer and cloud systems builder.">
+  <meta name="twitter:image" content="https://avishkarkedar.com/og-image.png">
 
   <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets & Knowledge Graph -->
   <script type="application/ld+json">
@@ -57,7 +62,7 @@
           "addressCountry": "India"
         },
         "sameAs": [
-          "https://portfolio.avishkarkedar.com/",
+          "https://avishkarkedar.com/portfolio/",
           "https://github.com/AvishkarKedar",
           "https://www.linkedin.com/in/avishkar-kedar-067aa53b0/",
           "https://x.com/AvishkarKedar"
@@ -96,7 +101,7 @@
         "@type": "ItemList",
         "name": "Hosted Web Applications & Cloud Services",
         "itemListElement": [
-          { "@type": "SiteNavigationElement", "position": 1, "name": "Developer Portfolio", "url": "https://portfolio.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 1, "name": "Developer Portfolio", "url": "https://avishkarkedar.com/portfolio" },
           { "@type": "SiteNavigationElement", "position": 2, "name": "AnonShare Encrypted Scratchpad", "url": "https://code.avishkarkedar.com" },
           { "@type": "SiteNavigationElement", "position": 3, "name": "Immich Photos Hub", "url": "https://photos.avishkarkedar.com" },
           { "@type": "SiteNavigationElement", "position": 4, "name": "Cloud OS Webtop", "url": "https://os.avishkarkedar.com" }
@@ -827,11 +832,11 @@
 
       <!-- Quick Action Buttons -->
       <div class="contact-links">
-        <a href="https://portfolio.avishkarkedar.com" class="contact-btn primary" title="View Full Developer Portfolio">
+        <a href="https://avishkarkedar.com/portfolio" class="contact-btn primary" title="View Full Developer Portfolio">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
           <span>Developer Portfolio</span>
         </a>
-        <button class="contact-btn" id="copyEmailBtn" onclick="copyEmail()" title="Copy email address">
+        <button class="contact-btn" id="copyEmailBtn" title="Copy email address">
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           <span>avishkarkedar@gmail.com</span>
         </button>
@@ -894,7 +899,7 @@
       <div class="directory-list" id="directoryList">
 
         <!-- 1. Developer Portfolio -->
-        <a href="https://portfolio.avishkarkedar.com" class="project-card" data-category="web" data-search="portfolio developer showcase react typescript vite tailwind cloudflare pages personal website">
+        <a href="https://avishkarkedar.com/portfolio" class="project-card" data-category="web" data-search="portfolio developer showcase react typescript vite tailwind cloudflare pages personal website">
           <div class="project-card-header">
             <div class="project-name-group">
               <span class="project-title">Personal Developer Portfolio</span>
@@ -1008,13 +1013,13 @@
       <!-- Portfolio Callout Note -->
       <div class="portfolio-callout">
         <span>Looking for open-source repositories, mobile apps (CottonCure, QRData, PG Fund Manager), and technical whitepapers?</span>
-        <a href="https://portfolio.avishkarkedar.com">Explore Developer Portfolio ↗</a>
+        <a href="https://avishkarkedar.com/portfolio">Explore Developer Portfolio ↗</a>
       </div>
 
       <!-- Empty State -->
       <div class="empty-state" id="emptyState">
         <p>No hosted websites found matching your search query.</p>
-        <button onclick="resetFilters()">Reset search and filters</button>
+        <button id="resetFiltersBtn">Reset search and filters</button>
       </div>
 
       <!-- Direct Contact & Connect Section -->
@@ -1030,7 +1035,7 @@
               <span>Email:</span>
               <strong>avishkarkedar@gmail.com</strong>
             </div>
-            <button class="contact-row-action" onclick="copyEmail()">
+            <button class="contact-row-action" id="copyEmailRowBtn">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
               <span>Copy</span>
             </button>
@@ -1073,7 +1078,7 @@
     <footer>
       <div>© 2026 Avishkar Kedar · All rights reserved</div>
       <div class="footer-links">
-        <a href="https://portfolio.avishkarkedar.com">Portfolio</a>
+        <a href="https://avishkarkedar.com/portfolio">Portfolio</a>
         <a href="https://github.com/AvishkarKedar" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://x.com/AvishkarKedar" target="_blank" rel="noopener noreferrer">X</a>
         <a href="#top">Back to top ↑</a>

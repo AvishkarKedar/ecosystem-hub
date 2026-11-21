@@ -100,7 +100,7 @@ const assert = require('assert');
 
   // 7. Capture Desktop Screenshot
   await page.setViewportSize({ width: 1440, height: 950 });
-  const desktopShot = 'C:/Users/Dell/.gemini/antigravity/brain/b6e56e02-45e8-46aa-91b9-42706c517b2c/screenshot-desktop.png';
+  const desktopShot = path.resolve(__dirname, 'screenshot-desktop.png');
   await page.screenshot({ path: desktopShot, fullPage: true });
   console.log('✓ Captured desktop screenshot to:', desktopShot);
 
@@ -112,7 +112,7 @@ const assert = require('assert');
   });
   const androidPage = await androidContext.newPage();
   await androidPage.goto(filePath, { waitUntil: 'load' });
-  const mobileShot = 'C:/Users/Dell/.gemini/antigravity/brain/b6e56e02-45e8-46aa-91b9-42706c517b2c/screenshot-mobile.png';
+  const mobileShot = path.resolve(__dirname, 'screenshot-mobile.png');
   await androidPage.screenshot({ path: mobileShot, fullPage: true });
   console.log('✓ Captured Android mobile screenshot (Pixel 7 412x915) to:', mobileShot);
 
