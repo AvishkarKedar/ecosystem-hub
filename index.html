@@ -9,11 +9,11 @@
   <!-- Primary SEO Meta Tags (Rank #1 on Google for "Avishkar Kedar") -->
   <title>Avishkar Kedar — Software Engineer & Cloud Directory | Official Site</title>
   <meta name="title" content="Avishkar Kedar — Software Engineer & Cloud Directory | Official Site">
-  <meta name="description" content="Official website and directory of Avishkar Kedar, software engineer and cloud builder from Pune, India. Live project index including AnonShare, Immich Hub, AgroIntel, Cloud OS, and developer portfolio.">
+  <meta name="description" content="Official website and directory of Avishkar Kedar, software engineer and cloud builder from Pune, India. Live project index including AnonShare, Immich Hub, Cloud OS, and developer portfolio.">
   <meta name="author" content="Avishkar Kedar">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="keywords" content="Avishkar Kedar, Avishkar, Kedar, Avishkar Kedar Pune, Avishkar Kedar developer, software engineer, cloud systems, AnonShare, AgroIntel, Immich Hub, avishkarkedar.com, portfolio.avishkarkedar.com">
+  <meta name="keywords" content="Avishkar Kedar, Avishkar, Kedar, Avishkar Kedar Pune, Avishkar Kedar developer, software engineer, cloud systems, AnonShare, Immich Hub, avishkarkedar.com, portfolio.avishkarkedar.com">
   <link rel="canonical" href="https://avishkarkedar.com/">
 
   <!-- OpenGraph / Facebook / LinkedIn -->
@@ -46,7 +46,7 @@
         "familyName": "Kedar",
         "alternateName": ["Avishkar", "Avishkar Kedar Pune"],
         "jobTitle": "Software Engineer & Cloud Systems Builder",
-        "description": "Full-stack software developer and cloud systems builder based in Pune, India. Creator of AnonShare, AgroIntel, and Immich Cloud Hub.",
+        "description": "Full-stack software developer and cloud systems builder based in Pune, India. Creator of AnonShare and Immich Cloud Hub.",
         "url": "https://avishkarkedar.com/",
         "email": "mailto:avishkarkedar@gmail.com",
         "nationality": "Indian",
@@ -99,8 +99,7 @@
           { "@type": "SiteNavigationElement", "position": 1, "name": "Developer Portfolio", "url": "https://portfolio.avishkarkedar.com" },
           { "@type": "SiteNavigationElement", "position": 2, "name": "AnonShare Encrypted Scratchpad", "url": "https://code.avishkarkedar.com" },
           { "@type": "SiteNavigationElement", "position": 3, "name": "Immich Photos Hub", "url": "https://photos.avishkarkedar.com" },
-          { "@type": "SiteNavigationElement", "position": 4, "name": "Cloud OS Webtop", "url": "https://os.avishkarkedar.com" },
-          { "@type": "SiteNavigationElement", "position": 5, "name": "AgroIntel Agritech Platform", "url": "https://agro.avishkarkedar.com" }
+          { "@type": "SiteNavigationElement", "position": 4, "name": "Cloud OS Webtop", "url": "https://os.avishkarkedar.com" }
         ]
       }
     ]
@@ -823,7 +822,7 @@
       <div class="hero-subtitle">Software Engineer & Cloud Systems Builder · Pune, India</div>
 
       <p class="hero-bio">
-        I build <strong>end-to-end software</strong> — encrypted real-time tools, cross-platform applications, and autonomous cloud infrastructure. Creator of <strong>AnonShare</strong>, <strong>AgroIntel</strong>, and <strong>Immich Cloud Hub</strong>.
+        I build <strong>end-to-end software</strong> — encrypted real-time tools, cross-platform applications, and autonomous cloud infrastructure. Creator of <strong>AnonShare</strong> and <strong>Immich Cloud Hub</strong>.
       </p>
 
       <!-- Quick Action Buttons -->
@@ -873,7 +872,7 @@
         <div class="section-title">
           <span>Hosted Websites & Services</span>
         </div>
-        <div class="section-count" id="countDisplay">5 hosted websites</div>
+        <div class="section-count" id="countDisplay">4 hosted websites</div>
       </div>
 
       <!-- Controls -->
@@ -885,8 +884,8 @@
         </div>
 
         <div class="filter-tabs">
-          <button class="filter-tab active" data-filter="all">All (5)</button>
-          <button class="filter-tab" data-filter="web">Web Apps (3)</button>
+          <button class="filter-tab active" data-filter="all">All (4)</button>
+          <button class="filter-tab" data-filter="web">Web Apps (2)</button>
           <button class="filter-tab" data-filter="cloud">Cloud Systems (2)</button>
         </div>
       </div>
@@ -1002,32 +1001,7 @@
           </div>
         </a>
 
-        <!-- 5. AgroIntel -->
-        <a href="https://agro.avishkarkedar.com" target="_blank" rel="noopener noreferrer" class="project-card" data-category="web" data-search="agrointel agritech plant disease ai scanner apmc mandi prices fastapi react pwa supabase">
-          <div class="project-card-header">
-            <div class="project-name-group">
-              <span class="project-title">AgroIntel Agritech Platform</span>
-              <span class="project-type-badge">AI Platform</span>
-            </div>
-            <div class="project-status">
-              <span class="project-status-dot"></span>
-              <span>Live</span>
-            </div>
-          </div>
-          <p class="project-desc">
-            Agritech platform for Indian farmers: multimodal AI plant-disease scanning with two-pass verification (vision + reasoning), live APMC mandi prices streamed over WebSockets, precision weather, and voice in 3 languages.
-          </p>
-          <div class="project-card-footer">
-            <div class="project-tech-tags">
-              <span class="tech-tag">React PWA</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">Qwen Vision</span>
-              <span class="tech-tag">Supabase RLS</span>
-              <span class="tech-tag">Groq LPU</span>
-            </div>
-            <span class="project-link-indicator">agro.avishkarkedar.com ↗</span>
-          </div>
-        </a>
+        <!-- 5. AgroIntel removed - pruned legacy service -->
 
       </div>
 
@@ -1110,105 +1084,6 @@
   <!-- Toast -->
   <div class="toast" id="toast">Copied to clipboard</div>
 
-  <script>
-    // State
-    let currentFilter = 'all';
-    const searchInput = document.getElementById('searchInput');
-    const filterTabs = document.querySelectorAll('.filter-tab');
-    const projectCards = document.querySelectorAll('.project-card');
-    const countDisplay = document.getElementById('countDisplay');
-    const emptyState = document.getElementById('emptyState');
-    const toast = document.getElementById('toast');
-
-    // Filter Logic
-    function applyFilters() {
-      const query = (searchInput.value || '').toLowerCase().trim();
-      let visibleCount = 0;
-
-      projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        const searchData = (card.getAttribute('data-search') || '').toLowerCase();
-        const textContent = card.innerText.toLowerCase();
-
-        const matchesFilter = (currentFilter === 'all') || (category === currentFilter);
-        const matchesQuery = !query || searchData.includes(query) || textContent.includes(query);
-
-        if (matchesFilter && matchesQuery) {
-          card.style.display = 'block';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      countDisplay.textContent = `${visibleCount} hosted website${visibleCount === 1 ? '' : 's'}`;
-      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
-    }
-
-    // Filter Tabs
-    filterTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        filterTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        currentFilter = tab.getAttribute('data-filter');
-        applyFilters();
-      });
-    });
-
-    // Search Input
-    searchInput.addEventListener('input', applyFilters);
-
-    // Keyboard Shortcuts (/ to focus search, Esc to clear)
-    document.addEventListener('keydown', (e) => {
-      if (e.key === '/' && document.activeElement !== searchInput) {
-        e.preventDefault();
-        searchInput.focus();
-      } else if (e.key === 'Escape' && document.activeElement === searchInput) {
-        searchInput.value = '';
-        searchInput.blur();
-        applyFilters();
-      }
-    });
-
-    // Reset Filters
-    function resetFilters() {
-      searchInput.value = '';
-      currentFilter = 'all';
-      filterTabs.forEach(t => t.classList.remove('active'));
-      filterTabs[0].classList.add('active');
-      applyFilters();
-    }
-
-    // Copy Email
-    function copyEmail() {
-      const email = 'avishkarkedar@gmail.com';
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(email)
-          .then(showToast)
-          .catch(() => fallbackCopy(email));
-      } else {
-        fallbackCopy(email);
-      }
-    }
-
-    function fallbackCopy(text) {
-      const temp = document.createElement('textarea');
-      temp.value = text;
-      document.body.appendChild(temp);
-      temp.select();
-      try {
-        document.execCommand('copy');
-      } catch (e) {}
-      document.body.removeChild(temp);
-      showToast();
-    }
-
-    function showToast() {
-      toast.classList.add('show');
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 2200);
-    }
-  </script>
+  <script defer src="./hub.js"></script>
 </body>
 </html>

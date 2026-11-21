@@ -24,10 +24,10 @@ const assert = require('assert');
   console.log('✓ Page Title:', title);
   assert(title.includes('Avishkar Kedar') && title.includes('Software Engineer'), 'Title must feature Avishkar Kedar');
 
-  // 2. Count Cards (Exactly 5 hosted websites)
+  // 2. Count Cards (Exactly 4 hosted websites)
   const totalCards = await page.locator('.project-card').count();
   console.log('✓ Total Hosted Website Cards:', totalCards);
-  assert.strictEqual(totalCards, 5, 'Expected exactly 5 hosted website projects');
+  assert.strictEqual(totalCards, 4, 'Expected exactly 4 hosted website projects');
 
   // 3. Category Filter Tests
   console.log('Testing category filters...');
@@ -36,7 +36,7 @@ const assert = require('assert');
   await page.click('button[data-filter="web"]');
   const webCards = await page.locator('.project-card:visible').count();
   console.log(`✓ Web filter: ${webCards} cards visible`);
-  assert.strictEqual(webCards, 3, 'Expected 3 web apps');
+  assert.strictEqual(webCards, 2, 'Expected 2 web apps');
 
   // Cloud Systems Filter
   await page.click('button[data-filter="cloud"]');
@@ -48,7 +48,7 @@ const assert = require('assert');
   await page.click('button[data-filter="all"]');
   const allCards = await page.locator('.project-card:visible').count();
   console.log(`✓ All filter restored: ${allCards} cards visible`);
-  assert.strictEqual(allCards, 5);
+  assert.strictEqual(allCards, 4);
 
   // 4. Search Filter Tests
   console.log('Testing search functionality...');
@@ -61,7 +61,7 @@ const assert = require('assert');
   await page.fill('#searchInput', '');
   const resetCount = await page.locator('.project-card:visible').count();
   console.log(`✓ Cleared search: ${resetCount} cards restored`);
-  assert.strictEqual(resetCount, 5);
+  assert.strictEqual(resetCount, 4);
 
   // Empty state test
   await page.fill('#searchInput', 'nonexistenttermxyz');
@@ -75,7 +75,7 @@ const assert = require('assert');
   await page.click('#emptyState button');
   const restoredFromEmpty = await page.locator('.project-card:visible').count();
   console.log(`✓ Reset via empty-state button: ${restoredFromEmpty} cards visible`);
-  assert.strictEqual(restoredFromEmpty, 5);
+  assert.strictEqual(restoredFromEmpty, 4);
 
   // 5. Test Email Copy
   await page.click('#copyEmailBtn');
