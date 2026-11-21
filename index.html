@@ -3,93 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Avishkar Kedar — Ecosystem & Cloud Directory</title>
-  <meta name="description" content="Central gateway to Avishkar Kedar's cloud ecosystem, production web applications, self-hosted services, and engineering projects.">
-  <meta name="author" content="Avishkar Kedar">
-  <meta name="theme-color" content="#090a0f">
   
-  <!-- OpenGraph / Social Meta Tags -->
+  <!-- Primary SEO Meta Tags (Rank #1 on Google for "Avishkar Kedar") -->
+  <title>Avishkar Kedar — Software Engineer & Cloud Directory | Official Site</title>
+  <meta name="title" content="Avishkar Kedar — Software Engineer & Cloud Directory | Official Site">
+  <meta name="description" content="Official website and directory of Avishkar Kedar. Software engineer and cloud systems builder based in Pune, India. Creator of AnonShare, AgroIntel, CottonCure, and self-hosted cloud infrastructure.">
+  <meta name="author" content="Avishkar Kedar">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="keywords" content="Avishkar Kedar, Avishkar, Kedar, Avishkar Kedar Pune, Avishkar Kedar developer, software engineer, cloud systems, AnonShare, AgroIntel, CottonCure, avishkarkedar.com, portfolio.avishkarkedar.com">
   <link rel="canonical" href="https://avishkarkedar.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://avishkarkedar.com">
-  <meta property="og:title" content="Avishkar Kedar — Ecosystem & Cloud Directory">
-  <meta property="og:description" content="Central hub for Avishkar Kedar's self-hosted infrastructure, production web apps, and developer portfolios.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@AvishkarKedar">
-  <meta name="twitter:title" content="Avishkar Kedar — Ecosystem & Cloud Directory">
-  <meta name="twitter:description" content="Central hub for Avishkar Kedar's self-hosted infrastructure, production web apps, and developer portfolios.">
+  <meta name="theme-color" content="#090a0b">
 
-  <!-- Schema.org JSON-LD Structured Data for Maximum SEO -->
+  <!-- OpenGraph / Facebook / LinkedIn -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://avishkarkedar.com/">
+  <meta property="og:title" content="Avishkar Kedar — Software Engineer & Cloud Directory">
+  <meta property="og:description" content="Official website of Avishkar Kedar. Software engineer and cloud builder from Pune, India. Explore hosted applications, open-source projects, and contact info.">
+  <meta property="profile:first_name" content="Avishkar">
+  <meta property="profile:last_name" content="Kedar">
+  <meta property="profile:username" content="AvishkarKedar">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@AvishkarKedar">
+  <meta name="twitter:creator" content="@AvishkarKedar">
+  <meta name="twitter:title" content="Avishkar Kedar — Software Engineer & Cloud Directory">
+  <meta name="twitter:description" content="Official website and project directory of Avishkar Kedar. Full-stack software developer and cloud systems builder.">
+
+  <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebSite",
-        "@id": "https://avishkarkedar.com/#website",
-        "url": "https://avishkarkedar.com/",
-        "name": "Avishkar Kedar — Ecosystem & Cloud Directory",
-        "description": "Central directory and access portal for Avishkar Kedar's cloud infrastructure, self-hosted services, and production web applications.",
-        "author": { "@id": "https://avishkarkedar.com/#person" }
-      },
-      {
         "@type": "Person",
         "@id": "https://avishkarkedar.com/#person",
         "name": "Avishkar Kedar",
-        "url": "https://portfolio.avishkarkedar.com/",
+        "alternateName": "Avishkar",
+        "jobTitle": "Software Engineer & Cloud Systems Builder",
+        "url": "https://avishkarkedar.com/",
+        "email": "mailto:avishkarkedar@gmail.com",
+        "nationality": "Indian",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "India"
+        },
         "sameAs": [
           "https://github.com/AvishkarKedar",
           "https://www.linkedin.com/in/avishkar-kedar-067aa53b0/",
-          "https://x.com/AvishkarKedar"
+          "https://x.com/AvishkarKedar",
+          "https://portfolio.avishkarkedar.com/"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Cloud Computing",
+          "Full-Stack Web Development",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Python",
+          "Docker",
+          "Cloudflare",
+          "Linux & Self-Hosting"
         ]
       },
       {
+        "@type": "WebSite",
+        "@id": "https://avishkarkedar.com/#website",
+        "url": "https://avishkarkedar.com/",
+        "name": "Avishkar Kedar — Official Website & Directory",
+        "description": "Official personal website, project directory, and cloud index for software engineer Avishkar Kedar.",
+        "publisher": { "@id": "https://avishkarkedar.com/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://avishkarkedar.com/#profilepage",
+        "url": "https://avishkarkedar.com/",
+        "name": "Avishkar Kedar Profile",
+        "isPartOf": { "@id": "https://avishkarkedar.com/#website" },
+        "mainEntity": { "@id": "https://avishkarkedar.com/#person" }
+      },
+      {
         "@type": "ItemList",
-        "name": "Ecosystem Services & Live Projects",
+        "name": "Public Hosted Projects & Engineering Systems",
         "itemListElement": [
           { "@type": "SiteNavigationElement", "position": 1, "name": "Developer Portfolio", "url": "https://portfolio.avishkarkedar.com" },
-          { "@type": "SiteNavigationElement", "position": 2, "name": "Immich Photos Hub", "url": "https://photos.avishkarkedar.com" },
-          { "@type": "SiteNavigationElement", "position": 3, "name": "AnonShare Encrypted Sharing", "url": "https://code.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 2, "name": "AnonShare Encrypted Scratchpad", "url": "https://code.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 3, "name": "Immich Photos Hub", "url": "https://photos.avishkarkedar.com" },
           { "@type": "SiteNavigationElement", "position": 4, "name": "Cloud OS Webtop", "url": "https://os.avishkarkedar.com" },
-          { "@type": "SiteNavigationElement", "position": 5, "name": "AViPN Reality Proxy", "url": "https://vpn.avishkarkedar.com" }
+          { "@type": "SiteNavigationElement", "position": 5, "name": "AgroIntel Agritech Platform", "url": "https://agro.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 6, "name": "CottonCure", "url": "https://github.com/AvishkarKedar/CottonCure" },
+          { "@type": "SiteNavigationElement", "position": 7, "name": "PG Fund Manager", "url": "https://github.com/AvishkarKedar/pg-fund-manager" },
+          { "@type": "SiteNavigationElement", "position": 8, "name": "OCI Capacity Hunter", "url": "https://github.com/AvishkarKedar/oci-capacity-hunter" },
+          { "@type": "SiteNavigationElement", "position": 9, "name": "QRData", "url": "https://github.com/AvishkarKedar/qrdata" }
         ]
       }
     ]
   }
   </script>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='50%' stop-color='%23a855f7'/><stop offset='100%' stop-color='%2306b6d4'/></linearGradient></defs><circle cx='50' cy='50' r='46' fill='url(%23g)'/><text x='50' y='64' font-size='42' font-family='system-ui, -apple-system, sans-serif' font-weight='800' fill='white' text-anchor='middle'>AK</text></svg>">
 
-  <!-- Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111315'/><text x='50' y='65' font-size='42' font-family='system-ui, sans-serif' font-weight='800' fill='%23ffffff' text-anchor='middle'>AK</text></svg>">
 
   <style>
+    /* ==========================================================================
+       Minimal Monochrome Design System (Black & White, Clean, High-Contrast)
+       ========================================================================== */
     :root {
-      --bg: #090a0f;
-      --bg-surface: #0e111a;
-      --card-bg: rgba(18, 21, 32, 0.75);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --card-hover-border: rgba(99, 102, 241, 0.45);
-      --card-hover-glow: rgba(99, 102, 241, 0.16);
-      --text: #f3f4f6;
-      --text-muted: #94a3b8;
-      --text-subtle: #64748b;
-      --accent: #6366f1;
-      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #06b6d4 100%);
-      --accent-card-gradient: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(168, 85, 247, 0.08) 50%, rgba(6, 182, 212, 0.06) 100%);
-      --cyan: #06b6d4;
-      --green: #10b981;
-      --amber: #f59e0b;
-      --purple: #a855f7;
-      --radius-xl: 24px;
-      --radius-lg: 18px;
-      --radius-md: 12px;
-      --radius-sm: 8px;
-      --transition-fast: 0.18s ease;
-      --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --bg: #090a0b;
+      --surface: #111315;
+      --surface-elevated: #16181b;
+      --surface-hover: #1a1d21;
+      --border: #23262b;
+      --border-hover: #3d424b;
+      --border-focus: #525866;
+      --text: #ffffff;
+      --text-muted: #9ea3ae;
+      --text-subtle: #636873;
+      --code-bg: #141619;
+      --green: #4ade80;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      --transition: all 0.16s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -101,657 +138,544 @@
     body {
       background-color: var(--bg);
       color: var(--text);
-      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       min-height: 100vh;
-      overflow-x: hidden;
-      line-height: 1.55;
-      background-image: 
-        radial-gradient(circle at 10% 12%, rgba(99, 102, 241, 0.14) 0%, transparent 45%),
-        radial-gradient(circle at 90% 25%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
-        radial-gradient(circle at 50% 75%, rgba(6, 182, 212, 0.08) 0%, transparent 55%),
-        radial-gradient(circle at 80% 95%, rgba(16, 185, 129, 0.06) 0%, transparent 40%);
-      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     /* Container */
     .container {
-      max-width: 1240px;
+      width: 100%;
+      max-width: 780px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 48px 24px 80px;
     }
 
-    /* Top Sticky Navigation */
+    /* Header & Hero */
     header {
-      padding: 18px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(9, 10, 15, 0.82);
+      margin-bottom: 40px;
     }
 
-    .nav-wrapper {
+    .top-bar {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
-      gap: 16px;
+      margin-bottom: 24px;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .avatar-badge {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: var(--accent-gradient);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 18px;
-      color: #fff;
-      box-shadow: 0 4px 18px rgba(99, 102, 241, 0.4);
-      flex-shrink: 0;
-    }
-
-    .brand-text h1 {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      line-height: 1.2;
-    }
-
-    .brand-text p {
-      font-size: 12px;
-      color: var(--text-muted);
-      letter-spacing: -0.1px;
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .status-pill {
+    .badge-status {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.25);
-      border-radius: 100px;
+      gap: 7px;
+      font-family: var(--font-mono);
       font-size: 12px;
-      font-weight: 600;
-      color: #34d399;
-      white-space: nowrap;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 5px 11px;
+      border-radius: 999px;
     }
 
     .status-dot {
-      width: 8px;
-      height: 8px;
+      width: 6.5px;
+      height: 6.5px;
       border-radius: 50%;
-      background-color: #10b981;
-      box-shadow: 0 0 10px #10b981;
-      animation: pulse 2.2s infinite;
+      background: var(--green);
+      box-shadow: 0 0 6px rgba(74, 222, 128, 0.5);
     }
 
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.45; transform: scale(0.9); }
-    }
-
-    .nav-link-btn {
-      padding: 7px 15px;
-      border-radius: var(--radius-sm);
+    .initials-logo {
+      font-family: var(--font-mono);
+      font-weight: 700;
       font-size: 13px;
-      font-weight: 600;
-      text-decoration: none;
       color: var(--text);
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--card-border);
-      transition: all var(--transition-fast);
-      display: inline-flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
       align-items: center;
-      gap: 6px;
-      cursor: pointer;
-    }
-
-    .nav-link-btn:hover {
-      background: rgba(255, 255, 255, 0.09);
-      border-color: rgba(255, 255, 255, 0.18);
-      color: #fff;
-    }
-
-    .nav-link-btn.primary {
-      background: rgba(99, 102, 241, 0.15);
-      border-color: rgba(99, 102, 241, 0.35);
-      color: #a5b4fc;
-    }
-
-    .nav-link-btn.primary:hover {
-      background: rgba(99, 102, 241, 0.25);
-      border-color: rgba(99, 102, 241, 0.55);
-      color: #fff;
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 56px 0 36px;
-      text-align: center;
-    }
-
-    .hero-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid rgba(99, 102, 241, 0.25);
-      border-radius: 100px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: #818cf8;
-      margin-bottom: 22px;
-      letter-spacing: 0.2px;
+      justify-content: center;
+      letter-spacing: -0.5px;
     }
 
     .hero-title {
-      font-size: clamp(32px, 4.8vw, 56px);
-      font-weight: 800;
-      letter-spacing: -1.3px;
-      line-height: 1.14;
-      margin-bottom: 18px;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.2;
     }
 
-    .gradient-text {
-      background: var(--accent-gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-desc {
-      font-size: clamp(16px, 1.8vw, 18px);
+    .hero-subtitle {
+      font-size: 15px;
+      font-weight: 500;
       color: var(--text-muted);
-      max-width: 720px;
-      margin: 0 auto 32px;
-      font-weight: 400;
-      line-height: 1.6;
+      margin-bottom: 14px;
+      letter-spacing: -0.2px;
     }
 
-    /* Quick Specs Bar */
-    .quick-specs-bar {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 14px 20px;
-      padding: 12px 24px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: var(--radius-md);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 12px;
-      color: #94a3b8;
-      backdrop-filter: blur(10px);
+    .hero-bio {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 680px;
+      margin-bottom: 24px;
     }
 
-    .spec-item {
+    .hero-bio strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Contact & Quick Links Bar */
+    .contact-links {
       display: flex;
-      align-items: center;
-      gap: 7px;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
     }
 
-    .spec-item svg {
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .contact-btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    .contact-btn svg {
       width: 14px;
       height: 14px;
-      color: var(--accent);
+      fill: currentColor;
+      opacity: 0.85;
     }
 
-    .spec-item span {
-      color: var(--text);
+    .contact-btn.primary {
+      background: #ffffff;
+      color: #000000;
+      border-color: #ffffff;
       font-weight: 600;
     }
 
-    /* Controls: Search & Category Filter */
-    .controls-bar {
+    .contact-btn.primary:hover {
+      background: #e6e6e6;
+      border-color: #e6e6e6;
+    }
+
+    /* Key Facts Strip */
+    .facts-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .fact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+
+    .fact-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .fact-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
+    /* Section Headers */
+    .section-header {
       display: flex;
+      align-items: baseline;
       justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 40px;
-      margin-bottom: 28px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
     }
 
-    .filter-tabs {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .filter-tab {
-      padding: 6px 14px;
-      border-radius: 100px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--card-border);
-      font-size: 12.5px;
+    .section-title {
+      font-size: 16px;
       font-weight: 600;
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: all var(--transition-fast);
-      user-select: none;
-    }
-
-    .filter-tab:hover {
-      background: rgba(255, 255, 255, 0.08);
-      color: #fff;
-    }
-
-    .filter-tab.active {
-      background: rgba(99, 102, 241, 0.2);
-      border-color: rgba(99, 102, 241, 0.45);
-      color: #a5b4fc;
-    }
-
-    .search-box {
-      position: relative;
-      min-width: 280px;
+      letter-spacing: -0.3px;
+      color: var(--text);
       display: flex;
       align-items: center;
+      gap: 8px;
     }
 
-    .search-box input {
+    .section-count {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-subtle);
+    }
+
+    /* Controls: Search & Filter Tabs */
+    .controls-wrapper {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .search-container {
+      position: relative;
       width: 100%;
-      padding: 8px 36px 8px 36px;
-      border-radius: var(--radius-sm);
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--card-border);
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
       color: var(--text);
-      font-family: inherit;
-      font-size: 13px;
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      padding: 11px 14px 11px 36px;
+      border-radius: 8px;
       outline: none;
-      transition: all var(--transition-fast);
+      transition: var(--transition);
     }
 
-    .search-box input:focus {
-      background: rgba(255, 255, 255, 0.07);
-      border-color: rgba(99, 102, 241, 0.5);
-      box-shadow: 0 0 12px rgba(99, 102, 241, 0.2);
+    .search-input:focus {
+      border-color: var(--border-focus);
+      background: var(--surface-elevated);
     }
 
-    .search-box svg.search-icon {
+    .search-input::placeholder {
+      color: var(--text-subtle);
+    }
+
+    .search-icon {
       position: absolute;
       left: 12px;
       top: 50%;
       transform: translateY(-50%);
-      width: 15px;
-      height: 15px;
-      color: var(--text-muted);
+      width: 14px;
+      height: 14px;
+      fill: var(--text-subtle);
       pointer-events: none;
     }
 
-    .search-box button#clearSearch {
+    .search-shortcut {
       position: absolute;
-      right: 10px;
+      right: 12px;
       top: 50%;
       transform: translateY(-50%);
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      cursor: pointer;
-      font-size: 18px;
-      line-height: 1;
-      display: none;
-      padding: 4px;
-      transition: color var(--transition-fast);
-    }
-
-    .search-box button#clearSearch:hover {
-      color: #fff;
-    }
-
-    /* Cards Grid */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 22px;
-    }
-
-    /* Base Card */
-    .service-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      text-decoration: none;
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all var(--transition-smooth);
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
-
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--accent-gradient);
-      opacity: 0;
-      transition: opacity var(--transition-smooth);
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--card-hover-border);
-      box-shadow: 0 14px 34px var(--card-hover-glow);
-    }
-
-    .service-card:hover::before {
-      opacity: 1;
-    }
-
-    /* Featured Showcase Card */
-    .service-card.featured {
-      grid-column: 1 / -1;
-      background: linear-gradient(135deg, rgba(26, 29, 44, 0.88) 0%, rgba(18, 20, 31, 0.85) 100%);
-      border-color: rgba(99, 102, 241, 0.35);
-    }
-
-    @media (min-width: 960px) {
-      .service-card.featured {
-        display: grid;
-        grid-template-columns: 1.35fr 1fr;
-        align-items: center;
-        gap: 36px;
-        padding: 32px 36px;
-      }
-    }
-
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 16px;
-    }
-
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      flex-shrink: 0;
-    }
-
-    /* Badges */
-    .badge {
-      padding: 4px 10px;
-      border-radius: 100px;
+      font-family: var(--font-mono);
       font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      white-space: nowrap;
+      color: var(--text-subtle);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      pointer-events: none;
     }
 
-    .badge-live {
-      background: rgba(16, 185, 129, 0.12);
-      color: #34d399;
-      border: 1px solid rgba(16, 185, 129, 0.28);
-    }
-
-    .badge-zt {
-      background: rgba(6, 182, 212, 0.12);
-      color: #22d3ee;
-      border: 1px solid rgba(6, 182, 212, 0.28);
-    }
-
-    .badge-auth {
-      background: rgba(245, 158, 11, 0.12);
-      color: #fbbf24;
-      border: 1px solid rgba(245, 158, 11, 0.28);
-    }
-
-    .badge-featured {
-      background: rgba(99, 102, 241, 0.18);
-      color: #a5b4fc;
-      border: 1px solid rgba(99, 102, 241, 0.35);
-    }
-
-    .badge-oss {
-      background: rgba(168, 85, 247, 0.14);
-      color: #c084fc;
-      border: 1px solid rgba(168, 85, 247, 0.3);
-    }
-
-    .card-title {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      letter-spacing: -0.4px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .domain-chip {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 12.5px;
-      color: #818cf8;
-      font-weight: 500;
-      margin-bottom: 12px;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .domain-chip svg {
-      width: 12px;
-      height: 12px;
-      opacity: 0.7;
-    }
-
-    .card-desc {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .card-tags {
+    .filter-tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 22px;
-    }
-
-    .tag {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      padding: 3px 8px;
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      color: #cbd5e1;
-    }
-
-    .card-action {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 13.5px;
-      font-weight: 600;
-      color: #818cf8;
-      transition: gap var(--transition-fast), color var(--transition-fast);
-      margin-top: auto;
-    }
-
-    .service-card:hover .card-action {
-      gap: 11px;
-      color: #c7d2fe;
-    }
-
-    /* Action button in non-link cards */
-    .btn-action-copy {
-      padding: 7px 14px;
-      border-radius: var(--radius-sm);
-      background: rgba(99, 102, 241, 0.15);
-      border: 1px solid rgba(99, 102, 241, 0.35);
-      color: #a5b4fc;
-      font-family: inherit;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
       gap: 6px;
-      transition: all var(--transition-fast);
     }
 
-    .btn-action-copy:hover {
-      background: rgba(99, 102, 241, 0.25);
-      color: #fff;
-      border-color: rgba(99, 102, 241, 0.55);
-    }
-
-    /* Empty state */
-    .empty-state {
-      text-align: center;
-      padding: 64px 20px;
-      background: rgba(18, 21, 32, 0.45);
-      border: 1px dashed rgba(255, 255, 255, 0.12);
-      border-radius: var(--radius-lg);
-      margin: 24px 0;
-      display: none;
-    }
-
-    .empty-state.show {
-      display: block;
-    }
-
-    .empty-state-icon {
-      font-size: 38px;
-      margin-bottom: 14px;
-      opacity: 0.85;
-    }
-
-    .empty-state-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-
-    .empty-state-desc {
-      font-size: 13.5px;
+    .filter-tab {
+      background: transparent;
+      border: 1px solid var(--border);
       color: var(--text-muted);
-      max-width: 440px;
-      margin: 0 auto 20px;
-      line-height: 1.5;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: var(--transition);
     }
 
-    /* Modal for VPN Details */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 200;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+    .filter-tab:hover {
+      color: var(--text);
+      border-color: var(--border-hover);
     }
 
-    .modal-backdrop.active {
+    .filter-tab.active {
+      background: var(--text);
+      color: #000000;
+      border-color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Directory List / Cards */
+    .directory-list {
       display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .modal-window {
-      background: #0f131f;
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      border-radius: var(--radius-xl);
-      max-width: 620px;
-      width: 100%;
-      padding: 30px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    .project-card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      transition: var(--transition);
       position: relative;
     }
 
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
+    .project-card:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-1.5px);
     }
 
-    .modal-title {
-      font-size: 20px;
-      font-weight: 700;
+    .project-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .project-name-group {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .modal-close {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      cursor: pointer;
-      font-size: 22px;
-      padding: 4px;
-      line-height: 1;
+    .project-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .project-type-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-subtle);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2px 7px;
       border-radius: 4px;
-      transition: color var(--transition-fast);
     }
 
-    .modal-close:hover {
-      color: #fff;
+    .project-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 500;
     }
 
-    .config-code-box {
-      background: #06080d;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
-      color: #cbd5e1;
-      word-break: break-all;
-      margin: 10px 0 16px;
-      max-height: 80px;
-      overflow-y: auto;
+    .project-status-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .project-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .project-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .project-tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tech-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-subtle);
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .project-link-indicator {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+    }
+
+    .project-card:hover .project-link-indicator {
+      color: var(--text);
+    }
+
+    /* Empty Search State */
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .empty-state button {
+      margin-top: 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: border-color var(--transition-fast), background var(--transition-fast);
     }
 
-    .config-code-box:hover {
-      border-color: rgba(99, 102, 241, 0.5);
-      background: #0a0d18;
+    /* Direct Contact Card */
+    .contact-section {
+      margin-top: 48px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .contact-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .contact-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      line-height: 1.55;
+    }
+
+    .contact-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .contact-row-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-muted);
+    }
+
+    .contact-row-left strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .contact-row-action {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .contact-row-action:hover {
+      border-color: var(--border-hover);
+      background: var(--surface-hover);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
     }
 
     /* Toast Notification */
@@ -759,837 +683,540 @@
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: #1e1b4b;
-      border: 1px solid #4f46e5;
-      color: #e0e7ff;
-      padding: 12px 20px;
-      border-radius: var(--radius-sm);
-      font-size: 13.5px;
+      background: #ffffff;
+      color: #000000;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
       font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      z-index: 300;
+      padding: 10px 18px;
+      border-radius: 6px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(12px);
       pointer-events: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
     }
 
     .toast.show {
       opacity: 1;
       transform: translateY(0);
-      pointer-events: auto;
-    }
-
-    /* Architecture / Telemetry Section */
-    .telemetry-section {
-      margin: 70px 0 40px;
-      padding: 32px;
-      background: rgba(14, 17, 26, 0.65);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: var(--radius-xl);
-    }
-
-    .telemetry-title {
-      font-size: 19px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .telemetry-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-
-    .telemetry-item {
-      padding: 16px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: var(--radius-md);
-    }
-
-    .telemetry-label {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .telemetry-val {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13.5px;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-      padding: 44px 0 36px;
-      margin-top: 50px;
-      text-align: center;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    .footer-link {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: color var(--transition-fast);
-    }
-
-    .footer-link:hover {
-      color: #fff;
-    }
-
-    .footer-copy {
-      font-size: 13px;
-      color: var(--text-subtle);
     }
 
     /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .cards-grid {
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 18px 60px;
+      }
+      .hero-title {
+        font-size: 26px;
+      }
+      .facts-strip {
         grid-template-columns: 1fr;
       }
-      .controls-bar {
+      .contact-row {
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
+        gap: 10px;
       }
-      .search-box {
-        min-width: 100%;
-      }
-      .quick-specs-bar {
-        font-size: 11px;
-        gap: 10px 14px;
-        padding: 10px 16px;
-      }
-      .nav-actions .nav-link-btn:not(.primary) {
-        display: none;
+      .contact-row-action {
+        align-self: flex-end;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Sticky Navigation -->
-  <header>
-    <div class="container nav-wrapper">
-      <a href="https://avishkarkedar.com" class="brand" aria-label="Home">
-        <div class="avatar-badge">AK</div>
-        <div class="brand-text">
-          <h1>Avishkar Kedar</h1>
-          <p>Ecosystem & Cloud Directory</p>
-        </div>
-      </a>
-      <div class="nav-actions">
-        <div class="status-pill">
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="top-bar">
+        <div class="initials-logo">AK</div>
+        <div class="badge-status">
           <span class="status-dot"></span>
-          <span>All Nodes Live (100%)</span>
+          <span>Open for Engineering & Projects</span>
         </div>
-        <a href="https://portfolio.avishkarkedar.com" target="_blank" rel="noopener" class="nav-link-btn primary">
-          <span>Portfolio ↗</span>
+      </div>
+
+      <h1 class="hero-title">Avishkar Kedar</h1>
+      <div class="hero-subtitle">Software Engineer & Cloud Systems Builder · Pune, India</div>
+
+      <p class="hero-bio">
+        I build <strong>end-to-end software</strong> — encrypted real-time tools, cross-platform applications, and autonomous cloud infrastructure. Creator of <strong>AnonShare</strong>, <strong>AgroIntel</strong>, and <strong>CottonCure</strong>.
+      </p>
+
+      <!-- Quick Action Buttons -->
+      <div class="contact-links">
+        <a href="https://portfolio.avishkarkedar.com" class="contact-btn primary" title="View Full Developer Portfolio">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Developer Portfolio</span>
         </a>
-        <a href="https://github.com/AvishkarKedar" target="_blank" rel="noopener" class="nav-link-btn">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        <button class="contact-btn" id="copyEmailBtn" onclick="copyEmail()" title="Copy email address">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>avishkarkedar@gmail.com</span>
+        </button>
+        <a href="https://github.com/AvishkarKedar" target="_blank" rel="noopener noreferrer" class="contact-btn" title="GitHub Profile">
+          <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
           <span>GitHub</span>
         </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <main class="container">
-    <section class="hero">
-      <div class="hero-chip">
-        <span>⚡ Cloudflare Edge & Zero Trust • Oracle Cloud ARM64 Host</span>
-      </div>
-      <h2 class="hero-title">
-        Unified Gateway to My <br>
-        <span class="gradient-text">Cloud & Software Ecosystem</span>
-      </h2>
-      <p class="hero-desc">
-        Fast, direct access to self-hosted cloud infrastructure, production web platforms, zero-knowledge collaboration tools, and software engineering portfolios.
-      </p>
-
-      <!-- Quick Specs Bar -->
-      <div class="quick-specs-bar">
-        <div class="spec-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-          Host: <span>Oracle Ampere A1 (2 OCPU / 12GB DDR4)</span>
-        </div>
-        <div class="spec-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Network: <span>Cloudflare Tunnel + Zero Trust</span>
-        </div>
-        <div class="spec-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          Kernel: <span>Linux 7.0 (TCP BBR + FQ)</span>
-        </div>
-        <div class="spec-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Location: <span>Phoenix, AZ (us-phoenix-1)</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Controls: Search & Tabs -->
-    <div class="controls-bar">
-      <div class="filter-tabs">
-        <button class="filter-tab active" data-filter="all">All <span id="allTabCount">(12)</span></button>
-        <button class="filter-tab" data-filter="cloud">Cloud & Self-Hosted</button>
-        <button class="filter-tab" data-filter="web">Web Applications</button>
-        <button class="filter-tab" data-filter="network">VPN & Security</button>
-        <button class="filter-tab" data-filter="oss">Open Source</button>
-      </div>
-      <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="serviceSearch" placeholder="Search services, tags, ports..." autocomplete="off" aria-label="Search services and projects">
-        <button id="clearSearch" type="button" aria-label="Clear search" onclick="clearSearchInput()">&times;</button>
-      </div>
-    </div>
-
-    <!-- Empty Search State -->
-    <div class="empty-state" id="noResultsState">
-      <div class="empty-state-icon">🔍</div>
-      <div class="empty-state-title">No matching services or projects</div>
-      <div class="empty-state-desc">We couldn't find anything matching <span id="searchQueryDisplay" style="color: #a5b4fc; font-weight: 600;"></span>. Try checking for typos or resetting your filters.</div>
-      <button class="nav-link-btn primary" id="resetSearchBtn" onclick="resetSearchAndFilters()">Reset Filters & Search</button>
-    </div>
-
-    <!-- Cards Grid -->
-    <div class="cards-grid" id="servicesGrid">
-
-      <!-- Featured Card: Personal Portfolio -->
-      <a href="https://portfolio.avishkarkedar.com" target="_blank" rel="noopener" class="service-card featured" data-category="web" data-keywords="portfolio developer react vite typescript tailwind framer motion projects showcase case studies">
-        <div>
-          <div class="card-top">
-            <div class="service-icon" style="background: rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.35);">💼</div>
-            <span class="badge badge-featured">Primary Showcase</span>
-          </div>
-          <div class="card-title">Personal Developer Portfolio</div>
-          <div class="domain-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            portfolio.avishkarkedar.com
-          </div>
-          <p class="card-desc">
-            Production engineering portfolio showcasing technical case-studies, deployed full-stack software releases, deep-dive system architectures, and verified developer credentials.
-          </p>
-          <div class="card-tags">
-            <span class="tag">React 18</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">TailwindCSS</span>
-            <span class="tag">Framer Motion</span>
-            <span class="tag">Cloudflare Pages</span>
-          </div>
-        </div>
-        <div style="text-align: right; align-self: center;">
-          <span class="card-action" style="font-size: 15px;">Launch Portfolio Experience ➔</span>
-        </div>
-      </a>
-
-      <!-- Immich Photos Hub -->
-      <a href="https://photos.avishkarkedar.com" target="_blank" rel="noopener" class="service-card" data-category="cloud" data-keywords="immich photos gallery google media storage postgresql valkey backup cloud">
-        <div class="card-top">
-          <div class="service-icon">📸</div>
-          <span class="badge badge-live">Live :2283</span>
-        </div>
-        <div class="card-title">Immich Family Photos Hub</div>
-        <div class="domain-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          photos.avishkarkedar.com
-        </div>
-        <p class="card-desc">
-          Self-hosted high-performance Google Photos replacement with 2,085+ family photos/videos across 32 albums, lossless storage, and automated nightly database backups.
-        </p>
-        <div class="card-tags">
-          <span class="tag">Immich v3.4</span>
-          <span class="tag">PostgreSQL 14</span>
-          <span class="tag">Valkey 9</span>
-          <span class="tag">NVMe Storage</span>
-          <span class="tag">Native Auth</span>
-        </div>
-        <div class="card-action">Open Media Library ➔</div>
-      </a>
-
-      <!-- AnonShare (textshare) -->
-      <a href="https://code.avishkarkedar.com" target="_blank" rel="noopener" class="service-card" data-category="web oss" data-keywords="anonshare textshare code sharing pastebin e2e encrypted real-time webrtc yjs nextjs open source">
-        <div class="card-top">
-          <div class="service-icon">📝</div>
-          <span class="badge badge-live">Live</span>
-        </div>
-        <div class="card-title">AnonShare (textshare)</div>
-        <div class="domain-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          code.avishkarkedar.com
-        </div>
-        <p class="card-desc">
-          Zero-knowledge end-to-end encrypted collaborative code and text scratchpad. Instant room creation, peer-to-peer syncing, and zero persistent traces after room exit.
-        </p>
-        <div class="card-tags">
-          <span class="tag">Next.js 16</span>
-          <span class="tag">React 19</span>
-          <span class="tag">Yjs CRDT</span>
-          <span class="tag">WebSocket</span>
-          <span class="tag">Cloudflare Pages</span>
-        </div>
-        <div class="card-action">Share Encrypted Notes ➔</div>
-      </a>
-
-      <!-- Cloud OS (Webtop) -->
-      <a href="https://os.avishkarkedar.com" target="_blank" rel="noopener" class="service-card" data-category="cloud" data-keywords="cloud os webtop kasm docker desktop selkies webrtc 60fps remote workspace linux ubuntu">
-        <div class="card-top">
-          <div class="service-icon">🖥️</div>
-          <span class="badge badge-zt">Zero Trust</span>
-        </div>
-        <div class="card-title">Cloud OS (Webtop)</div>
-        <div class="domain-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          os.avishkarkedar.com
-        </div>
-        <p class="card-desc">
-          Persistent remote Ubuntu Linux desktop workstation running inside Docker. Delivers 60 FPS ultra-low latency WebRTC streaming locked at 1080p, protected by Cloudflare Access OTP.
-        </p>
-        <div class="card-tags">
-          <span class="tag">Docker :3000</span>
-          <span class="tag">Selkies WebRTC</span>
-          <span class="tag">KasmVNC</span>
-          <span class="tag">1080p @ 96 DPI</span>
-          <span class="tag">CF Access OTP</span>
-        </div>
-        <div class="card-action">Launch Cloud Workspace ➔</div>
-      </a>
-
-      <!-- AViPN 3X-UI Web Panel -->
-      <a href="https://vpn.avishkarkedar.com" target="_blank" rel="noopener" class="service-card" data-category="network" data-keywords="vpn avipn 3x-ui xray vless reality proxy traffic routing panel zero trust">
-        <div class="card-top">
-          <div class="service-icon">🛡️</div>
-          <span class="badge badge-zt">Zero Trust</span>
-        </div>
-        <div class="card-title">AViPN (3X-UI Management Panel)</div>
-        <div class="domain-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          vpn.avishkarkedar.com
-        </div>
-        <p class="card-desc">
-          Administrative control center for VLESS-Reality proxy infrastructure, live client bandwidth auditing, key rotation, and real-time routing metrics on port 2053.
-        </p>
-        <div class="card-tags">
-          <span class="tag">3X-UI v3.11</span>
-          <span class="tag">Xray-core</span>
-          <span class="tag">Port :2053</span>
-          <span class="tag">CF Access OTP</span>
-        </div>
-        <div class="card-action">Access VPN Inbounds ➔</div>
-      </a>
-
-      <!-- AnonShare Admin Panel -->
-      <a href="https://admincode.avishkarkedar.com" target="_blank" rel="noopener" class="service-card" data-category="web" data-keywords="admincode anonshare admin dashboard telemetry session metrics cloudflare">
-        <div class="card-top">
-          <div class="service-icon">⚡</div>
-          <span class="badge badge-live">Live</span>
-        </div>
-        <div class="card-title">AnonShare Admin Portal</div>
-        <div class="domain-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          admincode.avishkarkedar.com
-        </div>
-        <p class="card-desc">
-          Administrative control panel for AnonShare rooms, WebSocket relay performance telemetry, and Edge CDN routing health metrics.
-        </p>
-        <div class="card-tags">
-          <span class="tag">Cloudflare Pages</span>
-          <span class="tag">Admin Console</span>
-          <span class="tag">Relay :8787</span>
-          <span class="tag">WebSocket Health</span>
-        </div>
-        <div class="card-action">Open Admin Portal ➔</div>
-      </a>
-
-      <!-- AViPN Direct Gateway (Interactive Card) -->
-      <div class="service-card" style="cursor: default;" data-category="network" data-keywords="node vless reality vpn proxy direct tcp 443 bbr xray unthrottled microsoft sni fast 5g">
-        <div>
-          <div class="card-top">
-            <div class="service-icon">🚀</div>
-            <span class="badge badge-auth">Direct TCP 443</span>
-          </div>
-          <div class="card-title">AViPN Direct Reality Gateway</div>
-          <div class="domain-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            node.avishkarkedar.com:443
-          </div>
-          <p class="card-desc">
-            Direct TCP Reality gateway for v2rayN and Android clients utilizing Microsoft CDN SNI TLS 1.3 camouflage and BBR speed optimization with zero cellular throttling.
-          </p>
-          <div class="card-tags">
-            <span class="tag">VLESS-Reality</span>
-            <span class="tag">Port 443 TCP</span>
-            <span class="tag">TCP BBR</span>
-            <span class="tag">SNI: microsoft.com</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 10px; margin-top: auto; flex-wrap: wrap;">
-          <button class="btn-action-copy" type="button" onclick="copyVlessProfile('direct')">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            Copy 5G VLESS Link
-          </button>
-          <button class="btn-action-copy" type="button" onclick="openVpnModal()">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-            View Config Details
-          </button>
-        </div>
-      </div>
-
-      <!-- AnonShare Relay -->
-      <div class="service-card" style="cursor: default;" data-category="cloud" data-keywords="relay websocket nodejs pm2 port 8787 cf tunnel live">
-        <div>
-          <div class="card-top">
-            <div class="service-icon">🔄</div>
-            <span class="badge badge-live">Live :8787</span>
-          </div>
-          <div class="card-title">AnonShare WebSocket Relay</div>
-          <div class="domain-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            relay.avishkarkedar.com
-          </div>
-          <p class="card-desc">
-            High-concurrency Node.js WebSocket relay running under PM2 daemon on the VPS host. Coordinates real-time room sync and message relays for AnonShare.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Node.js</span>
-            <span class="tag">ws v8.23</span>
-            <span class="tag">PM2 Daemon</span>
-            <span class="tag">CF Tunnel :8787</span>
-          </div>
-        </div>
-        <div style="margin-top: auto;">
-          <a href="https://relay.avishkarkedar.com" target="_blank" rel="noopener" class="card-action">Health Check Probe (200 OK) ➔</a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Open Source Projects Section -->
-    <section id="ossSection">
-      <div style="margin-top: 60px; margin-bottom: 24px;">
-        <h3 style="font-size: 22px; font-weight: 700; letter-spacing: -0.4px;">Open-Source Engineering & Software</h3>
-        <p style="font-size: 14px; color: var(--text-muted); margin-top: 4px;">Public repositories, offline utilities, and automated cloud systems built by Avishkar Kedar.</p>
-      </div>
-
-      <div class="cards-grid">
-        <!-- CottonCure -->
-        <a href="https://github.com/AvishkarKedar/CottonCure" target="_blank" rel="noopener" class="service-card" data-category="oss" data-keywords="cottoncure android tensorflow tflite machine learning agriculture disease pests marathi open source">
-          <div class="card-top">
-            <div class="service-icon">🌱</div>
-            <span class="badge badge-oss">Open Source</span>
-          </div>
-          <div class="card-title">CottonCure</div>
-          <div class="domain-chip">github.com/AvishkarKedar/CottonCure</div>
-          <p class="card-desc">
-            On-device edge AI Android application that detects cotton crop diseases and pests from leaf photographs using TensorFlow Lite with bilingual treatment guidance (English & Marathi).
-          </p>
-          <div class="card-tags">
-            <span class="tag">Android</span>
-            <span class="tag">TensorFlow Lite</span>
-            <span class="tag">Edge AI</span>
-            <span class="tag">Offline ML</span>
-          </div>
-          <div class="card-action">View Repository on GitHub ➔</div>
+        <a href="https://www.linkedin.com/in/avishkar-kedar-067aa53b0/" target="_blank" rel="noopener noreferrer" class="contact-btn" title="LinkedIn Profile">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          <span>LinkedIn</span>
         </a>
-
-        <!-- qrdata -->
-        <a href="https://github.com/AvishkarKedar/qrdata" target="_blank" rel="noopener" class="service-card" data-category="oss" data-keywords="qrdata flutter offline file transfer airgap animated qr aes-256 android windows open source">
-          <div class="card-top">
-            <div class="service-icon">📲</div>
-            <span class="badge badge-oss">Open Source</span>
-          </div>
-          <div class="card-title">qrdata</div>
-          <div class="domain-chip">github.com/AvishkarKedar/qrdata</div>
-          <p class="card-desc">
-            Air-gapped offline file transfer application via high-speed animated QR frame sequences. Zero internet, zero Bluetooth, optional AES-256-GCM encryption.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Android</span>
-            <span class="tag">Windows</span>
-            <span class="tag">AES-256-GCM</span>
-          </div>
-          <div class="card-action">View Repository on GitHub ➔</div>
-        </a>
-
-        <!-- oci-capacity-hunter -->
-        <a href="https://github.com/AvishkarKedar/oci-capacity-hunter" target="_blank" rel="noopener" class="service-card" data-category="oss" data-keywords="oci capacity hunter oracle cloud python automation arm64 ampere always free open source">
-          <div class="card-top">
-            <div class="service-icon">🎯</div>
-            <span class="badge badge-oss">Open Source</span>
-          </div>
-          <div class="card-title">oci-capacity-hunter</div>
-          <div class="domain-chip">github.com/AvishkarKedar/oci-capacity-hunter</div>
-          <p class="card-desc">
-            Automated 24/7 Oracle Cloud Infrastructure capacity hunting engine designed to acquire high-demand Always-Free ARM64 Ampere A1 compute instances with zero manual intervention.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Python 3</span>
-            <span class="tag">OCI SDK</span>
-            <span class="tag">Daemon</span>
-            <span class="tag">Automation</span>
-          </div>
-          <div class="card-action">View Repository on GitHub ➔</div>
-        </a>
-
-        <!-- pg-fund-manager -->
-        <a href="https://github.com/AvishkarKedar/pg-fund-manager" target="_blank" rel="noopener" class="service-card" data-category="oss web" data-keywords="pg fund manager hostel management tenant dashboard rent allocation beds payments react static open source">
-          <div class="card-top">
-            <div class="service-icon">🏢</div>
-            <span class="badge badge-oss">Open Source</span>
-          </div>
-          <div class="card-title">PG Fund Manager</div>
-          <div class="domain-chip">github.com/AvishkarKedar/pg-fund-manager</div>
-          <p class="card-desc">
-            PG & Hostel Manager — comprehensive management dashboard for bed capacity, tenant onboarding, rental collection tracking, and financial analytics.
-          </p>
-          <div class="card-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">ERP Dashboard</span>
-            <span class="tag">Hostel Management</span>
-            <span class="tag">Static Demo</span>
-          </div>
-          <div class="card-action">View Repository on GitHub ➔</div>
+        <a href="https://x.com/AvishkarKedar" target="_blank" rel="noopener noreferrer" class="contact-btn" title="X Profile">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span>@AvishkarKedar</span>
         </a>
       </div>
-    </section>
 
-    <!-- Infrastructure Telemetry Section -->
-    <section class="telemetry-section">
-      <div class="telemetry-title">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        <span>Production Host & Network Telemetry</span>
-      </div>
-      <div class="telemetry-grid">
-        <div class="telemetry-item">
-          <div class="telemetry-label">Cloud VPS Provider</div>
-          <div class="telemetry-val">Oracle Cloud Infrastructure (OCI)</div>
+      <!-- Key Facts -->
+      <div class="facts-strip">
+        <div class="fact-card">
+          <div class="fact-label">Location</div>
+          <div class="fact-value">Pune, India (IST)</div>
         </div>
-        <div class="telemetry-item">
-          <div class="telemetry-label">Compute Engine</div>
-          <div class="telemetry-val">Ampere Altra A1 ARM64 (2 OCPU / 12 GB RAM)</div>
+        <div class="fact-card">
+          <div class="fact-label">Engineering Focus</div>
+          <div class="fact-value">Cloud, Web & Security</div>
         </div>
-        <div class="telemetry-item">
-          <div class="telemetry-label">Operating System</div>
-          <div class="telemetry-val">Ubuntu 24.04 LTS (Kernel 7.0 BBR)</div>
-        </div>
-        <div class="telemetry-item">
-          <div class="telemetry-label">Edge Ingress</div>
-          <div class="telemetry-val">Cloudflare Tunnel (4x QUIC) + Zero Trust</div>
-        </div>
-        <div class="telemetry-item">
-          <div class="telemetry-label">Hostname / Public IP</div>
-          <div class="telemetry-val">kedar • 129.146.59.56</div>
-        </div>
-        <div class="telemetry-item">
-          <div class="telemetry-label">Mirror Domain</div>
-          <div class="telemetry-val"><a href="https://avishkark.in" target="_blank" rel="noopener" style="color: #818cf8; text-decoration: none;">avishkark.in ↗</a></div>
+        <div class="fact-card">
+          <div class="fact-label">Primary Stack</div>
+          <div class="fact-value">TS · Next.js · Python · OCI</div>
         </div>
       </div>
-    </section>
+    </header>
 
-  </main>
-
-  <!-- VPN Profile Details Modal -->
-  <div class="modal-backdrop" id="vpnModal" role="dialog" aria-modal="true" aria-labelledby="vpnModalTitle">
-    <div class="modal-window">
-      <div class="modal-header">
-        <div class="modal-title" id="vpnModalTitle">
-          <span>🛡️</span>
-          <span>AViPN Client Connection Details</span>
+    <!-- Project Directory Section -->
+    <main>
+      <div class="section-header">
+        <div class="section-title">
+          <span>Project & Cloud Directory</span>
         </div>
-        <button class="modal-close" type="button" aria-label="Close modal" onclick="closeVpnModal()">&times;</button>
+        <div class="section-count" id="countDisplay">9 projects</div>
       </div>
 
-      <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 16px;">
-        Click any box or button to copy the configuration into your clipboard for <strong>v2rayN</strong> (Windows) or <strong>v2rayNG</strong> (Android).
-      </p>
-
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-size: 12px; font-weight: 700; color: #34d399; text-transform: uppercase;">Profile 1: Direct IP (Fastest 5G)</span>
-          <button class="btn-action-copy" style="padding: 4px 10px; font-size: 11px;" type="button" onclick="copyVlessProfile('direct')">Copy Link</button>
+      <!-- Controls -->
+      <div class="controls-wrapper">
+        <div class="search-container">
+          <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Filter projects, technologies, or keywords..." autocomplete="off">
+          <span class="search-shortcut">/</span>
         </div>
-        <div class="config-code-box" id="directVlessBox" title="Click to copy Direct IP profile" onclick="copyVlessProfile('direct')">vless://5bd2e336-2f46-4aec-a174-c69648736728@129.146.59.56:443?type=tcp&security=reality&pbk=rqaBCNnyj787ksvuDwshq-o1jDGQGw2qn1Dgx5ehRSQ&fp=chrome&sni=www.microsoft.com&sid=32e1237940594240&spx=%2F&flow=xtls-rprx-vision#AViPN-US-Fast</div>
-      </div>
 
-      <div style="margin-top: 14px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-size: 12px; font-weight: 700; color: #818cf8; text-transform: uppercase;">Profile 2: Domain-Based</span>
-          <button class="btn-action-copy" style="padding: 4px 10px; font-size: 11px;" type="button" onclick="copyVlessProfile('domain')">Copy Link</button>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All (9)</button>
+          <button class="filter-tab" data-filter="hosted">Hosted Apps (3)</button>
+          <button class="filter-tab" data-filter="cloud">Cloud & Infrastructure (2)</button>
+          <button class="filter-tab" data-filter="oss">Open Source & Tools (4)</button>
         </div>
-        <div class="config-code-box" id="domainVlessBox" title="Click to copy Domain-based profile" onclick="copyVlessProfile('domain')">vless://5bd2e336-2f46-4aec-a174-c69648736728@node.avishkarkedar.com:443?type=tcp&security=reality&pbk=rqaBCNnyj787ksvuDwshq-o1jDGQGw2qn1Dgx5ehRSQ&fp=chrome&sni=www.microsoft.com&sid=32e1237940594240&spx=%2F&flow=xtls-rprx-vision#AViPN-US-Domain</div>
       </div>
 
-      <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; color: var(--text-muted); line-height: 1.5;">
-        <strong>Camouflage SNI:</strong> <code>www.microsoft.com:443</code> (TLS 1.3 AES-256 H2, zero ISP throttling)<br>
-        <strong>Congestion Algorithm:</strong> TCP BBR enabled on VPS kernel
+      <!-- Project Cards -->
+      <div class="directory-list" id="directoryList">
+
+        <!-- 1. Developer Portfolio -->
+        <a href="https://portfolio.avishkarkedar.com" class="project-card" data-category="hosted" data-search="portfolio developer showcase react typescript vite tailwind cloudflare pages personal website">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">Personal Developer Portfolio</span>
+              <span class="project-type-badge">Web</span>
+            </div>
+            <div class="project-status">
+              <span class="project-status-dot"></span>
+              <span>Live</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Interactive software engineering portfolio featuring verified GitHub analytics, real-time commit heatmaps, comprehensive experience timeline, and project showcases.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Cloudflare Pages</span>
+            </div>
+            <span class="project-link-indicator">portfolio.avishkarkedar.com ↗</span>
+          </div>
+        </a>
+
+        <!-- 2. AnonShare -->
+        <a href="https://code.avishkarkedar.com" target="_blank" rel="noopener noreferrer" class="project-card" data-category="hosted" data-search="anonshare textshare encrypted real-time scratchpad aes-gcm crdt code runner nextjs privacy">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">AnonShare (textshare)</span>
+              <span class="project-type-badge">Encrypted App</span>
+            </div>
+            <div class="project-status">
+              <span class="project-status-dot"></span>
+              <span>Live</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Zero-knowledge encrypted real-time scratchpad. Client-side AES-GCM 256 encryption, Yjs CRDT synchronization over WebSocket relay, live presence, and bubblewrap-sandboxed multi-language code runner.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Next.js 14</span>
+              <span class="tech-tag">WebCrypto AES-GCM</span>
+              <span class="tech-tag">CRDT</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">WebSocket</span>
+            </div>
+            <span class="project-link-indicator">code.avishkarkedar.com ↗</span>
+          </div>
+        </a>
+
+        <!-- 3. Immich Photos Hub -->
+        <a href="https://photos.avishkarkedar.com" target="_blank" rel="noopener noreferrer" class="project-card" data-category="cloud" data-search="immich photos hub google photos alternative backup machine learning docker postgresql valkey cloud">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">Immich Cloud Photos Hub</span>
+              <span class="project-type-badge">Self-Hosted</span>
+            </div>
+            <div class="project-status">
+              <span class="project-status-dot"></span>
+              <span>Live</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Production self-hosted photo management platform and high-performance Google Photos replacement. Features on-prem machine learning facial recognition, metadata extraction, and automated cold backup scripts.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">PostgreSQL 14</span>
+              <span class="tech-tag">Valkey</span>
+              <span class="tech-tag">ML Inference</span>
+              <span class="tech-tag">Oracle Cloud ARM64</span>
+            </div>
+            <span class="project-link-indicator">photos.avishkarkedar.com ↗</span>
+          </div>
+        </a>
+
+        <!-- 4. Cloud OS Webtop -->
+        <a href="https://os.avishkarkedar.com" target="_blank" rel="noopener noreferrer" class="project-card" data-category="cloud" data-search="cloud os webtop kasmvnc selkies webrtc 60fps ubuntu desktop browser docker">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">Cloud OS (Webtop)</span>
+              <span class="project-type-badge">Cloud Compute</span>
+            </div>
+            <div class="project-status">
+              <span class="project-status-dot"></span>
+              <span>Live</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Web-native persistent Linux workstation running Ubuntu XFCE in Docker. Powered by KasmVNC and Selkies WebRTC delivering 60 FPS hardware-accelerated remote desktop streaming inside any standard web browser.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Ubuntu 24.04</span>
+              <span class="tech-tag">KasmVNC</span>
+              <span class="tech-tag">Selkies WebRTC</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Cloudflare Access</span>
+            </div>
+            <span class="project-link-indicator">os.avishkarkedar.com ↗</span>
+          </div>
+        </a>
+
+        <!-- 5. AgroIntel -->
+        <a href="https://agro.avishkarkedar.com" target="_blank" rel="noopener noreferrer" class="project-card" data-category="hosted" data-search="agrointel agritech plant disease ai scanner apmc mandi prices fastapi react pwa supabase">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">AgroIntel Agritech Platform</span>
+              <span class="project-type-badge">AI Platform</span>
+            </div>
+            <div class="project-status">
+              <span class="project-status-dot"></span>
+              <span>Live</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Agritech platform for Indian farmers: multimodal AI plant-disease scanning with two-pass verification (vision + reasoning), live APMC mandi prices streamed over WebSockets, precision weather, and voice in 3 languages.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">React PWA</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Qwen Vision</span>
+              <span class="tech-tag">Supabase RLS</span>
+              <span class="tech-tag">Groq LPU</span>
+            </div>
+            <span class="project-link-indicator">agro.avishkarkedar.com ↗</span>
+          </div>
+        </a>
+
+        <!-- 6. CottonCure -->
+        <a href="https://github.com/AvishkarKedar/CottonCure" target="_blank" rel="noopener noreferrer" class="project-card" data-category="oss" data-search="cottoncure cotton plant disease android app flutter tensorflow lite offline tflite firebase">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">CottonCure</span>
+              <span class="project-type-badge">Mobile AI</span>
+            </div>
+            <span class="project-link-indicator">GitHub ↗</span>
+          </div>
+          <p class="project-desc">
+            Cotton plant disease detection Android application. Ships with an offline TensorFlow Lite model bundled directly in the APK — diagnoses require zero API keys and function completely air-gapped without internet.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">TensorFlow Lite</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Firebase Auth</span>
+              <span class="tech-tag">On-Device AI</span>
+            </div>
+            <span class="project-link-indicator">AvishkarKedar/CottonCure ↗</span>
+          </div>
+        </a>
+
+        <!-- 7. PG Fund Manager -->
+        <a href="https://github.com/AvishkarKedar/pg-fund-manager" target="_blank" rel="noopener noreferrer" class="project-card" data-category="oss" data-search="pg fund manager expense split ledger student accommodation tracking react typescript">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">PG Fund Manager</span>
+              <span class="project-type-badge">Utility</span>
+            </div>
+            <span class="project-link-indicator">GitHub ↗</span>
+          </div>
+          <p class="project-desc">
+            Automated student accommodation expense ledger and group fund tracking utility. Computes net balances, debt simplification, and itemized transaction histories with offline-first local persistence.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">PWA</span>
+            </div>
+            <span class="project-link-indicator">AvishkarKedar/pg-fund-manager ↗</span>
+          </div>
+        </a>
+
+        <!-- 8. OCI Capacity Hunter -->
+        <a href="https://github.com/AvishkarKedar/oci-capacity-hunter" target="_blank" rel="noopener noreferrer" class="project-card" data-category="oss" data-search="oci capacity hunter oracle cloud infrastructure ampere a1 python automation cli api always free">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">OCI Capacity Hunter</span>
+              <span class="project-type-badge">Cloud Automation</span>
+            </div>
+            <span class="project-link-indicator">GitHub ↗</span>
+          </div>
+          <p class="project-desc">
+            Automated cloud daemon that polls Oracle Cloud Infrastructure (OCI) APIs to secure scarce Always Free Ampere A1 ARM64 compute capacity with instant Telegram and Discord push notifications.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python 3</span>
+              <span class="tech-tag">OCI SDK</span>
+              <span class="tech-tag">Automation</span>
+              <span class="tech-tag">Telegram API</span>
+            </div>
+            <span class="project-link-indicator">AvishkarKedar/oci-capacity-hunter ↗</span>
+          </div>
+        </a>
+
+        <!-- 9. QRData -->
+        <a href="https://github.com/AvishkarKedar/qrdata" target="_blank" rel="noopener noreferrer" class="project-card" data-category="oss" data-search="qrdata air-gapped offline file transfer animated qr frames fec parity crc32 sha256 flutter">
+          <div class="project-card-header">
+            <div class="project-name-group">
+              <span class="project-title">QRData</span>
+              <span class="project-type-badge">Air-Gapped Protocol</span>
+            </div>
+            <span class="project-link-indicator">GitHub ↗</span>
+          </div>
+          <p class="project-desc">
+            Air-gapped offline file transfer over high-density animated QR frames. Zero WiFi, Bluetooth, or cables needed. Chunked with CRC32 + SHA-256 verification and XOR parity forward error correction (FEC).
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">FEC Parity</span>
+              <span class="tech-tag">SHA-256</span>
+              <span class="tech-tag">Air-Gapped</span>
+            </div>
+            <span class="project-link-indicator">AvishkarKedar/qrdata ↗</span>
+          </div>
+        </a>
+
       </div>
-    </div>
-  </div>
 
-  <!-- Toast Notification -->
-  <div class="toast" id="toast" role="status" aria-live="polite">
-    <svg id="toastIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-    <span id="toastMsg">VLESS Link copied to clipboard!</span>
-  </div>
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+        <p>No projects found matching your search query.</p>
+        <button onclick="resetFilters()">Reset search and filters</button>
+      </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
+      <!-- Direct Contact & Connect Section -->
+      <section class="contact-section">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-desc">
+          I am always open to discussing software engineering roles, high-performance web systems, cloud infrastructure, or open-source collaborations.
+        </p>
+
+        <div class="contact-rows">
+          <div class="contact-row">
+            <div class="contact-row-left">
+              <span>Email:</span>
+              <strong>avishkarkedar@gmail.com</strong>
+            </div>
+            <button class="contact-row-action" onclick="copyEmail()">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-row-left">
+              <span>GitHub:</span>
+              <strong>github.com/AvishkarKedar</strong>
+            </div>
+            <a href="https://github.com/AvishkarKedar" target="_blank" rel="noopener noreferrer" class="contact-row-action">
+              <span>Visit ↗</span>
+            </a>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-row-left">
+              <span>LinkedIn:</span>
+              <strong>linkedin.com/in/avishkar-kedar-067aa53b0</strong>
+            </div>
+            <a href="https://www.linkedin.com/in/avishkar-kedar-067aa53b0/" target="_blank" rel="noopener noreferrer" class="contact-row-action">
+              <span>Connect ↗</span>
+            </a>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-row-left">
+              <span>Twitter / X:</span>
+              <strong>x.com/AvishkarKedar</strong>
+            </div>
+            <a href="https://x.com/AvishkarKedar" target="_blank" rel="noopener noreferrer" class="contact-row-action">
+              <span>Follow ↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>© 2026 Avishkar Kedar · All rights reserved</div>
       <div class="footer-links">
-        <a href="https://portfolio.avishkarkedar.com" target="_blank" rel="noopener" class="footer-link">Developer Portfolio</a>
-        <a href="https://github.com/AvishkarKedar" target="_blank" rel="noopener" class="footer-link">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/avishkar-kedar-067aa53b0/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-        <a href="https://x.com/AvishkarKedar" target="_blank" rel="noopener" class="footer-link">Twitter / X</a>
-        <a href="https://photos.avishkarkedar.com" target="_blank" rel="noopener" class="footer-link">Immich Photos</a>
-        <a href="https://code.avishkarkedar.com" target="_blank" rel="noopener" class="footer-link">AnonShare</a>
-        <a href="https://avishkark.in" target="_blank" rel="noopener" class="footer-link">Mirror (avishkark.in)</a>
+        <a href="https://portfolio.avishkarkedar.com">Portfolio</a>
+        <a href="https://github.com/AvishkarKedar" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/AvishkarKedar" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="#top">Back to top ↑</a>
       </div>
-      <p class="footer-copy">
-        © 2026 Avishkar Kedar • Oracle Cloud ARM64 & Cloudflare Zero Trust Production Ecosystem
-      </p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
-  <!-- Interactive JavaScript -->
+  <!-- Toast -->
+  <div class="toast" id="toast">Copied to clipboard</div>
+
   <script>
-    // Search & Category Filtering
-    const searchInput = document.getElementById('serviceSearch');
-    const clearSearchBtn = document.getElementById('clearSearch');
-    const filterTabs = document.querySelectorAll('.filter-tab');
-    const serviceCards = document.querySelectorAll('.service-card');
-    const ossSection = document.getElementById('ossSection');
-    const noResultsState = document.getElementById('noResultsState');
-    const searchQueryDisplay = document.getElementById('searchQueryDisplay');
-    const allTabCount = document.getElementById('allTabCount');
-
+    // State
     let currentFilter = 'all';
+    const searchInput = document.getElementById('searchInput');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const projectCards = document.querySelectorAll('.project-card');
+    const countDisplay = document.getElementById('countDisplay');
+    const emptyState = document.getElementById('emptyState');
+    const toast = document.getElementById('toast');
 
-    function initCounts() {
-      if (allTabCount) {
-        allTabCount.textContent = `(${serviceCards.length})`;
-      }
-    }
-    initCounts();
-
-    function filterCards() {
+    // Filter Logic
+    function applyFilters() {
       const query = (searchInput.value || '').toLowerCase().trim();
+      let visibleCount = 0;
 
-      if (clearSearchBtn) {
-        clearSearchBtn.style.display = query ? 'block' : 'none';
-      }
+      projectCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const searchData = (card.getAttribute('data-search') || '').toLowerCase();
+        const textContent = card.innerText.toLowerCase();
 
-      let totalVisible = 0;
-      let ossVisible = 0;
+        const matchesFilter = (currentFilter === 'all') || (category === currentFilter);
+        const matchesQuery = !query || searchData.includes(query) || textContent.includes(query);
 
-      serviceCards.forEach(card => {
-        const category = card.getAttribute('data-category') || '';
-        const keywords = card.getAttribute('data-keywords') || '';
-        const title = (card.querySelector('.card-title') || {}).textContent || '';
-        const desc = (card.querySelector('.card-desc') || {}).textContent || '';
-        
-        const combinedText = (title + ' ' + desc + ' ' + keywords + ' ' + category).toLowerCase();
-
-        const matchesCategory = (currentFilter === 'all') || category.split(' ').includes(currentFilter);
-        const matchesQuery = !query || combinedText.includes(query);
-
-        if (matchesCategory && matchesQuery) {
-          card.style.display = '';
-          totalVisible++;
-          if (ossSection && ossSection.contains(card)) {
-            ossVisible++;
-          }
+        if (matchesFilter && matchesQuery) {
+          card.style.display = 'block';
+          visibleCount++;
         } else {
           card.style.display = 'none';
         }
       });
 
-      // Automatically show/hide the OSS section header based on visible children
-      if (ossSection) {
-        if (ossVisible > 0) {
-          ossSection.style.display = '';
-        } else {
-          ossSection.style.display = 'none';
-        }
-      }
-
-      // Display empty state if 0 cards match
-      if (noResultsState) {
-        if (totalVisible === 0) {
-          noResultsState.classList.add('show');
-          if (searchQueryDisplay) {
-            searchQueryDisplay.textContent = query ? `"${query}"` : 'the selected category';
-          }
-        } else {
-          noResultsState.classList.remove('show');
-        }
-      }
+      countDisplay.textContent = `${visibleCount} project${visibleCount === 1 ? '' : 's'}`;
+      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
     }
 
-    if (searchInput) {
-      searchInput.addEventListener('input', filterCards);
-    }
-
-    function clearSearchInput() {
-      if (searchInput) {
-        searchInput.value = '';
-        searchInput.focus();
-        filterCards();
-      }
-    }
-
-    function resetSearchAndFilters() {
-      if (searchInput) searchInput.value = '';
-      currentFilter = 'all';
-      filterTabs.forEach(t => {
-        if (t.getAttribute('data-filter') === 'all') {
-          t.classList.add('active');
-        } else {
-          t.classList.remove('active');
-        }
-      });
-      filterCards();
-    }
-
+    // Filter Tabs
     filterTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         filterTabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         currentFilter = tab.getAttribute('data-filter');
-        filterCards();
+        applyFilters();
       });
     });
 
-    // Toast Notification & Robust Clipboard Helper
-    let toastTimeout = null;
+    // Search Input
+    searchInput.addEventListener('input', applyFilters);
 
-    function showToast(msg, type = 'success') {
-      const toast = document.getElementById('toast');
-      const toastMsg = document.getElementById('toastMsg');
-      const toastIcon = document.getElementById('toastIcon');
-      if (!toast || !toastMsg) return;
-
-      toastMsg.textContent = msg;
-
-      if (type === 'error') {
-        toast.style.borderColor = '#ef4444';
-        toast.style.background = '#3f1118';
-        if (toastIcon) toastIcon.setAttribute('stroke', '#f87171');
-      } else {
-        toast.style.borderColor = '#4f46e5';
-        toast.style.background = '#1e1b4b';
-        if (toastIcon) toastIcon.setAttribute('stroke', '#34d399');
+    // Keyboard Shortcuts (/ to focus search, Esc to clear)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+      } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+        searchInput.value = '';
+        searchInput.blur();
+        applyFilters();
       }
+    });
 
+    // Reset Filters
+    function resetFilters() {
+      searchInput.value = '';
+      currentFilter = 'all';
+      filterTabs.forEach(t => t.classList.remove('active'));
+      filterTabs[0].classList.add('active');
+      applyFilters();
+    }
+
+    // Copy Email
+    function copyEmail() {
+      const email = 'avishkarkedar@gmail.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email)
+          .then(showToast)
+          .catch(() => fallbackCopy(email));
+      } else {
+        fallbackCopy(email);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      document.body.appendChild(temp);
+      temp.select();
+      try {
+        document.execCommand('copy');
+      } catch (e) {}
+      document.body.removeChild(temp);
+      showToast();
+    }
+
+    function showToast() {
       toast.classList.add('show');
-      clearTimeout(toastTimeout);
-      toastTimeout = setTimeout(() => {
+      setTimeout(() => {
         toast.classList.remove('show');
-      }, 3200);
+      }, 2200);
     }
-
-    async function copyTextToClipboard(text, successMessage) {
-      let success = false;
-
-      // 1. Try modern async clipboard API
-      if (navigator.clipboard && window.isSecureContext) {
-        try {
-          await navigator.clipboard.writeText(text);
-          success = true;
-        } catch (err) {
-          success = false;
-        }
-      }
-
-      // 2. Fallback using execCommand
-      if (!success) {
-        try {
-          const textArea = document.createElement("textarea");
-          textArea.value = text;
-          textArea.style.position = "fixed";
-          textArea.style.left = "-9999px";
-          textArea.style.top = "-9999px";
-          textArea.style.opacity = "0";
-          document.body.appendChild(textArea);
-          textArea.focus();
-          textArea.select();
-          success = document.execCommand('copy');
-          textArea.remove();
-        } catch (err) {
-          success = false;
-        }
-      }
-
-      if (success) {
-        showToast(successMessage, 'success');
-      } else {
-        showToast('Unable to copy automatically. Please copy from the modal.', 'error');
-        openVpnModal();
-      }
-      return success;
-    }
-
-    function copyVlessProfile(type) {
-      const directUri = "vless://5bd2e336-2f46-4aec-a174-c69648736728@129.146.59.56:443?type=tcp&security=reality&pbk=rqaBCNnyj787ksvuDwshq-o1jDGQGw2qn1Dgx5ehRSQ&fp=chrome&sni=www.microsoft.com&sid=32e1237940594240&spx=%2F&flow=xtls-rprx-vision#AViPN-US-Fast";
-      const domainUri = "vless://5bd2e336-2f46-4aec-a174-c69648736728@node.avishkarkedar.com:443?type=tcp&security=reality&pbk=rqaBCNnyj787ksvuDwshq-o1jDGQGw2qn1Dgx5ehRSQ&fp=chrome&sni=www.microsoft.com&sid=32e1237940594240&spx=%2F&flow=xtls-rprx-vision#AViPN-US-Domain";
-
-      const textToCopy = type === 'direct' ? directUri : domainUri;
-      const successMsg = type === 'direct' ? '5G Direct IP VLESS profile copied!' : 'Domain VLESS profile copied!';
-      copyTextToClipboard(textToCopy, successMsg);
-    }
-
-    // Modal Handling
-    function openVpnModal() {
-      const modal = document.getElementById('vpnModal');
-      if (modal) {
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    }
-
-    function closeVpnModal() {
-      const modal = document.getElementById('vpnModal');
-      if (modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    }
-
-    // Close on backdrop click or Escape key
-    window.addEventListener('click', (e) => {
-      const modal = document.getElementById('vpnModal');
-      if (e.target === modal) {
-        closeVpnModal();
-      }
-    });
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeVpnModal();
-      }
-    });
   </script>
 </body>
 </html>
