@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#090a0f">
   
   <!-- OpenGraph / Social Meta Tags -->
+  <link rel="canonical" href="https://avishkarkedar.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://avishkarkedar.com">
   <meta property="og:title" content="Avishkar Kedar — Ecosystem & Cloud Directory">
@@ -17,6 +18,45 @@
   <meta name="twitter:site" content="@AvishkarKedar">
   <meta name="twitter:title" content="Avishkar Kedar — Ecosystem & Cloud Directory">
   <meta name="twitter:description" content="Central hub for Avishkar Kedar's self-hosted infrastructure, production web apps, and developer portfolios.">
+
+  <!-- Schema.org JSON-LD Structured Data for Maximum SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://avishkarkedar.com/#website",
+        "url": "https://avishkarkedar.com/",
+        "name": "Avishkar Kedar — Ecosystem & Cloud Directory",
+        "description": "Central directory and access portal for Avishkar Kedar's cloud infrastructure, self-hosted services, and production web applications.",
+        "author": { "@id": "https://avishkarkedar.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://avishkarkedar.com/#person",
+        "name": "Avishkar Kedar",
+        "url": "https://portfolio.avishkarkedar.com/",
+        "sameAs": [
+          "https://github.com/AvishkarKedar",
+          "https://www.linkedin.com/in/avishkar-kedar-067aa53b0/",
+          "https://x.com/AvishkarKedar"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Ecosystem Services & Live Projects",
+        "itemListElement": [
+          { "@type": "SiteNavigationElement", "position": 1, "name": "Developer Portfolio", "url": "https://portfolio.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 2, "name": "Immich Photos Hub", "url": "https://photos.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 3, "name": "AnonShare Encrypted Sharing", "url": "https://code.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 4, "name": "Cloud OS Webtop", "url": "https://os.avishkarkedar.com" },
+          { "@type": "SiteNavigationElement", "position": 5, "name": "AViPN Reality Proxy", "url": "https://vpn.avishkarkedar.com" }
+        ]
+      }
+    ]
+  }
+  </script>
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='50%' stop-color='%23a855f7'/><stop offset='100%' stop-color='%2306b6d4'/></linearGradient></defs><circle cx='50' cy='50' r='46' fill='url(%23g)'/><text x='50' y='64' font-size='42' font-family='system-ui, -apple-system, sans-serif' font-weight='800' fill='white' text-anchor='middle'>AK</text></svg>">
